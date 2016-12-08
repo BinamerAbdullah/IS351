@@ -32,6 +32,14 @@ public class SmartFarm {
             }
         }
         
+        public void checkHumidity(Humidity x){
+            
+            if (x >40){
+                system.out.print("you should watering soon");
+            }  
+                else 
+                system.out.print("Humidity is ok");
+        
     }
     
 }
