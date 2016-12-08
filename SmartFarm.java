@@ -33,13 +33,24 @@ public class SmartFarm {
         }
         
         public void checkHumidity(Humidity x){
-            
-            if (x >40){
+             if (x >40){
                 system.out.print("you should watering soon");
-            }  
+             }  
                 else 
                 system.out.print("Humidity is ok");
-        
-    }
+            }
     
+        public void status(){
+            if(humiditySensor >=45){
+                system.out.pringln("Watering is needed");
+            }
+            else{ system.out.println("Watering isn't needed");
+             
+            if(waterSensor <= 30){
+                system.out.println("You Sould fill Your water tank");
+            }
+               else {system.out.println("Filling Water tank isn't needed");
+                     
+                    }
+            
 }
